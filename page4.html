@@ -2,87 +2,147 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>أسئلة إضافية</title>
+    <title>أسئلة تدريبية – حالات المادة</title>
+
+    <!-- ربط ملف CSS -->
+    <link rel="stylesheet" href="style.css">
 
     <style>
-        body {
-            font-family: "Arial";
-            background-color: #f9f9f9;
-            margin: 20px;
-        }
-
-        .nav a {
-            text-decoration: none;
-            margin-left: 10px;
-            font-weight: bold;
-            color: #d63a7c;
-        }
-
-        .question-box {
+        /* صندوق السؤال */
+        .quiz-box {
             background: white;
-            border: 2px solid #d63a7c;
             padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 25px;
+            border-radius: 12px;
+            width: 85%;
+            margin: 25px auto;
+            border: 2px solid #d63a7c;
         }
 
-        h2 {
-            color: #b21e5b;
+        .quiz-box h2 {
+            color: #b30059;
+        }
+
+        /* خيارات الأسئلة */
+        .option {
+            margin: 8px 0;
+            font-size: 18px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            transform: scale(1.4);
+            margin-left: 8px;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- روابط الصفحات -->
-    <div class="nav">
-        <a href="index.html">الصفحة الرئيسية</a> |
-        <a href="page2.html">شرح المادة</a> |
-        <a href="page3.html">التمارين</a> |
-        <a href="page4.html">الأسئلة</a> |
-        <a href="page5.html">اتصل بنا</a>
-    </div>
+<!-- روابط الصفحات -->
+<nav class="menu">
+    <a href="index.html">الرئيسية</a>
+    <a href="page2.html">شرح المادة</a>
+    <a href="page3.html">التمارين</a>
+    <a href="page4.html" class="active">الأسئلة</a>
+    <a href="page5.html">اتصل بنا</a>
+</nav>
 
-    <h1>أسئلة نظرية على حالات المادة</h1>
+<h1>❓ أسئلة تدريبية على حالات المادة</h1>
 
-    <!-- السؤال الأول -->
-    <div class="question-box">
-        <h2>السؤال 1</h2>
-        <p>ما الفرق الأساسي بين الحالات الثلاث للمادة؟</p>
+<!-- ========== السؤال الأول ========== -->
+<div class="quiz-box">
+    <h2>السؤال 1</h2>
+    <p>ما الفرق الأساسي بين الحالات الثلاث للمادة؟</p>
 
-        <ul>
-            <li>أ) ترتيب الجسيمات وحركتها</li>
-            <li>ب) لون المادة</li>
-            <li>ج) كتلة الجسيم الواحد</li>
-            <li>د) كمية الطاقة في الإلكترونات</li>
-        </ul>
-    </div>
+    <label class="option">
+        <input type="radio" name="q1"> ترتيب الجسيمات وحركتها ✔
+    </label>
 
-    <!-- السؤال الثاني -->
-    <div class="question-box">
-        <h2>السؤال 2</h2>
-        <p>لماذا يمكن ضغط الغاز ولا يمكن ضغط السائل؟</p>
+    <label class="option">
+        <input type="radio" name="q1"> لون المادة
+    </label>
 
-        <ul>
-            <li>أ) لأن جسيمات الغاز متقاربة جدًا</li>
-            <li>ب) لأن الفراغات بين جسيمات الغاز أكبر من الفراغات في السائل</li>
-            <li>ج) لأن كتلة السائل أكبر</li>
-            <li>د) لأن درجة الحرارة مختلفة</li>
-        </ul>
-    </div>
+    <label class="option">
+        <input type="radio" name="q1"> كتلة الجسيم الواحد
+    </label>
 
-    <!-- السؤال الثالث -->
-    <div class="question-box">
-        <h2>السؤال 3</h2>
-        <p>أي مما يلي يحدث عند تسخين المادة الصلبة؟</p>
+    <label class="option">
+        <input type="radio" name="q1"> كمية الطاقة في الإلكترونات
+    </label>
+</div>
 
-        <ul>
-            <li>أ) تصطف الجسيمات أكثر</li>
-            <li>ب) تبطؤ الجسيمات</li>
-            <li>ج) تزيد حركة الجسيمات ويزداد البعد بينها</li>
-            <li>د) تتحول مباشرةً إلى غاز</li>
-        </ul>
-    </div>
+<!-- ========== السؤال الثاني ========== -->
+<div class="quiz-box">
+    <h2>السؤال 2</h2>
+    <p>لماذا يمكن ضغط الغاز ولا يمكن ضغط السائل؟</p>
+
+    <label class="option">
+        <input type="radio" name="q2"> لأن جسيمات الغاز متقاربة جدًا
+    </label>
+
+    <label class="option">
+        <input type="radio" name="q2"> لأن الفراغات بين جسيمات الغاز أكبر ✔
+    </label>
+
+    <label class="option">
+        <input type="radio" name="q2"> لأن كتلة السائل أكبر
+    </label>
+
+    <label class="option">
+        <input type="radio" name="q2"> لأن درجة الحرارة مختلفة
+    </label>
+</div>
+
+<!-- ========== السؤال الثالث ========== -->
+<div class="quiz-box">
+    <h2>السؤال 3</h2>
+    <p>أي مما يلي يحدث عند تسخين المادة الصلبة؟</p>
+
+    <label class="option">
+        <input type="radio" name="q3"> تصطف الجسيمات أكثر
+    </label>
+
+    <label class="option">
+        <input type="radio" name="q3"> تبطؤ الجسيمات
+    </label>
+
+    <label class="option">
+        <input type="radio" name="q3"> تزيد حركة الجسيمات ويزداد البعد بينها ✔
+    </label>
+
+    <label class="option">
+        <input type="radio" name="q3"> تتحول مباشرة إلى غاز
+    </label>
+</div>
+
+<!-- ========== أسئلة صح وخطأ ========== -->
+<div class="quiz-box">
+    <h2>أسئلة صح وخطأ</h2>
+
+    <p>1. حركة جسيمات الغاز أسرع من حركة جسيمات السائل.</p>
+    <label class="option">
+        <input type="checkbox"> ✔ صح
+    </label>
+    <label class="option">
+        <input type="checkbox"> ❌ خطأ
+    </label>
+
+    <p>2. جسيمات المادة تتغير عند التسخين.</p>
+    <label class="option">
+        <input type="checkbox"> ✔ صح
+    </label>
+    <label class="option">
+        <input type="checkbox"> ❌ خطأ (الحركة فقط هي التي تتغير)
+    </label>
+
+    <p>3. يمكن ضغط السائل مثل الغاز تمامًا.</p>
+    <label class="option">
+        <input type="checkbox"> صح
+    </label>
+    <label class="option">
+        <input type="checkbox"> ❌ خطأ ✔
+    </label>
+</div>
 
 </body>
 </html>
