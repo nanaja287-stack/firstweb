@@ -2,8 +2,7 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>تمارين مع شرح – حالات المادة</title>
-    <link rel="stylesheet" href="style.css">
+    <title>التمارين – حالات المادة</title>
 
     <style>
         body {
@@ -26,21 +25,35 @@
             font-size: 18px;
         }
 
-        .section {
-            width: 85%;
-            background: white;
-            padding: 20px;
-            border-radius: 12px;
-            margin: 25px auto;
-            border-right: 4px solid #ff7aa8;
-            line-height: 1.8;
-        }
-
-        .section h2 {
+        h1 {
+            text-align: center;
             color: #d4006e;
-            margin-bottom: 10px;
+            margin-top: 30px;
         }
 
+        .intro {
+            text-align: center;
+            padding: 15px;
+            width: 80%;
+            margin: auto;
+            color: #444;
+            background: #fff3f7;
+            border-radius: 10px;
+            font-size: 19px;
+        }
+
+        /* الفيديو */
+        .video-section {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        iframe {
+            border-radius: 14px;
+            margin-top: 15px;
+        }
+
+        /* صندوق السؤال */
         .question-box {
             border: 2px solid #ffaacb;
             background: #fff;
@@ -57,80 +70,69 @@
             border-radius: 10px;
             border: 1px solid #ccc;
         }
-
-        .video-section {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        iframe {
-            border-radius: 14px;
-        }
     </style>
 </head>
 
 <body>
 
-<!-- روابط الصفحات -->
-<div class="nav">
-    <a href="index.html">الصفحة الرئيسية</a>
-    <a href="page2.html">شرح المادة</a>
-    <a href="page3.html">التمارين</a>
-    <a href="page4.html">الأسئلة</a>
-    <a href="page5.html">اتصل بنا</a>
-</div>
+    <!-- روابط الصفحات -->
+    <div class="nav">
+        <a href="index.html">الصفحة الرئيسية</a>
+        <a href="page2.html">شرح المادة</a>
+        <a href="page3.html">التمارين</a>
+        <a href="page4.html">الأسئلة</a>
+        <a href="page5.html">اتصل بنا</a>
+    </div>
 
-<h1 style="text-align:center; color:#d4006e; margin-top:25px;">
-📘 شرح مختصر + تمارين على حالات المادة
-</h1>
+    <h1>✏️ تمارين على حالات المادة</h1>
 
-<!-- ====================== الفيديو قبل أي شيء ====================== -->
-<div class="video-section">
-    <h2>🎥 فيديو تعليمي عن حالات المادة</h2>
+    <!-- شرح بسيط -->
+    <div class="intro">
+        في هذا القسم ستشاهد فيديو مبسّط يوضّح الفرق بين حالات المادة الثلاث،
+        بالإضافة إلى أسئلة تعتمد على الصور لمساعدتك في فهم حركة الجسيمات
+        والمسافة بينها في كل حالة.
+    </div>
 
-    <iframe width="820" height="460"
-        src="https://www.youtube.com/embed/erMdF1-j3Uo"
-        title="حالات المادة للأطفال"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-    </iframe>
-</div>
+    <!-- فيديو تعليمي -->
+    <div class="video-section">
+        <h2>🎥 فيديو يوضح حالات المادة</h2>
 
-<!-- ====================== المادة النظرية ====================== -->
-<div class="section">
-    <h2>❖ مقدمة – النموذج الجسيمي للمادة</h2>
-    <p>
-        تتكوّن المادة من جسيمات صغيرة جدًا لا يمكن رؤيتها ولكنها تتحرك باستمرار.  
-        يختلف ترتيب الجسيمات، البعد بينها، وقوى التجاذب في كل حالة من حالات المادة.
-    </p>
-    <ul>
-        <li><b>الحالة الصلبة:</b> الجسيمات قريبة جداً، حركة اهتزازية فقط، ترتيب منتظم.</li>
-        <li><b>الحالة السائلة:</b> الجسيمات متباعدة أكثر، حركة انزلاقية، ترتيب غير ثابت.</li>
-        <li><b>الحالة الغازية:</b> الجسيمات بعيدة جداً، حركتها سريعة وعشوائية.</li>
-    </ul>
-    <p>كل سلوك للمادة يمكن تفسيره من خلال شكل حركة الجسيمات وقوة التجاذب بينها.</p>
-</div>
+        <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/erMdF1-j3Uo" 
+            title="YouTube video" 
+            frameborder="0" 
+            allowfullscreen>
+        </iframe>
 
-<!-- ====================== الأسئلة ====================== -->
+        <br><br>
 
-<div class="question-box">
-    <h2>السؤال 1</h2>
-    <p>أيّ جملة صحيحة بالنسبة لجسيمات الأوكسجين في الحالة السائلة بالمقارنة مع الحالة الغازية؟</p>
-    <img src="img/q1.png" alt="صورة السؤال الأول">
-</div>
+        <a href="https://www.youtube.com/watch?v=erMdF1-j3Uo" target="_blank"
+           style="background:#ff4081; color:white; padding:10px 18px; border-radius:8px; text-decoration:none;">
+           ▶️ مشاهدة الفيديو على يوتيوب
+        </a>
+    </div>
 
-<div class="question-box">
-    <h2>السؤال 2</h2>
-    <p>الغاز يمكن ضغطه بسهولة بينما السائل لا يمكن ضغطه تقريبًا. ما التفسير الصحيح؟</p>
-    <img src="img/q2.png" alt="صورة السؤال الثاني">
-</div>
 
-<div class="question-box">
-    <h2>السؤال 3</h2>
-    <p>يُسحب جزء من الهواء في قنينة مغلقة. كيف ستنتظم الجسيمات المتبقية؟</p>
-    <img src="img/q3.png" alt="صورة السؤال الثالث">
-</div>
+    <!-- السؤال الأول -->
+    <div class="question-box">
+        <h2>السؤال 1</h2>
+        <p>أيّ جملة صحيحة بالنسبة لجسيمات الأوكسجين في الحالة السائلة مقارنة بالحالة الغازية؟</p>
+        <img src="img/q1.png" alt="صورة السؤال الأول">
+    </div>
+
+    <!-- السؤال الثاني -->
+    <div class="question-box">
+        <h2>السؤال 2</h2>
+        <p>الغاز يمكن ضغطه بينما السائل لا يمكن ضغطه تقريبًا. ما السبب؟</p>
+        <img src="img/q2.png" alt="صورة السؤال الثاني">
+    </div>
+
+    <!-- السؤال الثالث -->
+    <div class="question-box">
+        <h2>السؤال 3</h2>
+        <p>بعد شفط جزء من الهواء داخل قنينة مغلقة، كيف تنتظم الجسيمات المتبقية؟</p>
+        <img src="img/q3.png" alt="صورة السؤال الثالث">
+    </div>
 
 </body>
 </html>

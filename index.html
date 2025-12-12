@@ -5,67 +5,115 @@
     <title>الصفحة الرئيسية</title>
 
     <style>
+        /* 🔵 الخلفية المتدرجة */
         body {
             font-family: "Cairo", sans-serif;
-            background: #fafafa;
-            text-align: center; /* كل شيء في وسط الصفحة */
-            padding: 40px;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ffe6f2, #ffb3d9);
+            animation: fadeBackground 4s ease-in-out infinite alternate;
         }
 
-        nav a {
+        @keyframes fadeBackground {
+            from { background: #ffe6f2; }
+            to { background: #ffd0e6; }
+        }
+
+        /* 🔵 شريط الروابط */
+        .nav {
+            margin-top: 25px;
+        }
+
+        .nav a {
             margin: 0 12px;
-            font-size: 20px;
             text-decoration: none;
-            color: #d63a7c;
-            font-weight: bold;
-        }
-
-        h1 {
+            font-size: 20px;
             color: #b30059;
-            margin-top: 20px;
-            font-size: 34px;
+            font-weight: bold;
+            transition: 0.3s;
         }
 
+        .nav a:hover {
+            color: #ff0066;
+            transform: scale(1.1);
+        }
+
+        /* 🔵 العنوان مع أنيميشن */
+        h1 {
+            margin-top: 40px;
+            font-size: 32px;
+            color: #820041;
+            animation: fadeIn 2s ease-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            font-size: 26px;
+            color: #a0004f;
+            margin-top: 10px;
+            animation: slideIn 2.2s ease-out;
+        }
+
+        @keyframes slideIn {
+            0% { opacity: 0; transform: translateX(-20px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+
+        /* 🔵 رسالة الترحيب */
         .welcome {
             font-size: 22px;
-            margin-top: 25px;
-            color: #ff4081;
+            margin-top: 20px;
+            color: #ff1a75;
             font-weight: bold;
+            animation: fadeIn 2.5s ease-out;
         }
 
+        /* 🔵 صندوق الوصف */
         .description {
-            margin-top: 18px;
+            width: 70%;
+            margin: 20px auto;
+            background: white;
+            padding: 18px;
+            border-radius: 12px;
+            color: #444;
             font-size: 20px;
             line-height: 1.8;
-            color: #444;
-            width: 70%;
-            margin-left: auto;
-            margin-right: auto;
+            box-shadow: 0 0 10px #ff99cc;
+            animation: fadeIn 3s ease-out;
         }
     </style>
-</head>
 
+</head>
 <body>
 
-    <h1>اليوم سوف نتعلم عن التجارب العلمية</h1>
+    <!-- العنوان -->
+    <h1>السلام عليكم ورحمة الله وبركاته أعزائي الطلاب 🌟</h1>
 
-    <!-- روابط الصفحات -->
-    <nav>
+    <h2>اليوم سوف نتعلم عن التجارب العلمية</h2>
+
+    <!-- الروابط -->
+    <div class="nav">
         <a href="index.html">الرئيسية</a> |
         <a href="page2.html">شرح المادة</a> |
         <a href="page3.html">التمارين</a> |
         <a href="page4.html">الأسئلة</a> |
         <a href="page5.html">اتصل بنا</a>
-    </nav>
+    </div>
 
+    <!-- الترحيب -->
     <p class="welcome">💡 يسعدني تواجدكم في الموقع</p>
 
+    <!-- الوصف -->
     <p class="description">
-        هذا الموقع مخصص لشرح المادة العلمية بطريقة سهلة وواضحة،  
-        مع مجموعة من التمارين والأسئلة والصور التعليمية 
+        هذا الموقع مخصص لشرح المادة العلمية بطريقة سهلة وواضحة،
+        مع مجموعة من التمارين والأسئلة والصور التعليمية
         التي تساعدكم على فهم حالات المادة والنموذج الجسيمي بشكل أفضل.
     </p>
 
 </body>
 </html>
-
