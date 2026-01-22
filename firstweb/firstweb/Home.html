@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>الصفحة الرئيسية</title>
+
+    <style> 
+        /* 🔵 الخلفية المتدرجة */
+        body {
+            font-family: "Cairo", sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ffe6f2, #ffb3d9);
+            animation: fadeBackground 4s ease-in-out infinite alternate;
+        }
+
+        @keyframes fadeBackground {
+            from { background: #ffe6f2; }
+            to { background: #ffd0e6; }
+        }
+
+        /* 🔵 شريط الروابط */
+        .nav {
+            margin-top: 25px;
+        }
+
+        .nav a {
+            margin: 0 12px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #b30059;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .nav a:hover {
+            color: #ff0066;
+            transform: scale(1.1);
+        }
+
+        /* 🔵 العنوان مع أنيميشن */
+        h1 {
+            margin-top: 40px;
+            font-size: 32px;
+            color: #820041;
+            animation: fadeIn 2s ease-out;
+            font-style: italic;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            font-size: 26px;
+            color: #a0004f;
+            margin-top: 10px;
+            animation: slideIn 2.2s ease-out;
+        }
+
+        @keyframes slideIn {
+            0% { opacity: 0; transform: translateX(-20px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+
+        /* 🔵 رسالة الترحيب */
+        .welcome {
+            font-size: 22px;
+            margin-top: 20px;
+            color: #ff1a75;
+            font-weight: bold;
+            animation: fadeIn 2.5s ease-out;
+        }
+
+        /* 🔵 صندوق الوصف */
+        .description {
+            width: 70%;
+            margin: 20px auto;
+            background: white;
+            padding: 18px;
+            border-radius: 12px;
+            color: #444;
+            font-size: 20px;
+            line-height: 1.8;
+            box-shadow: 0 0 10px #ff99cc;
+            animation: fadeIn 3s ease-out;
+        }
+    </style>
+
+</head>
+<body>
+
+  <!-- روابط الصفحات-->
+ <div class="nav">
+        <a href="Login.html">تسجيل الدخول</a> |
+        <a href="Materials.html">شرح المادة</a> |
+        <a href="Quiz1.html">التمارين</a> |
+        <a href="Quiz2.html">امتحان</a> |
+        <a href="Contact.html">اتصل بنا</a>
+
+       
+    </div>
+
+    <!-- العنوان -->
+    <h1>السلام عليكم ورحمة الله وبركاته أعزائي الطلاب 🌟</h1>
+
+    <h2>اليوم سوف نتعلم عن التجارب العلمية</h2>
+
+    <!-- الترحيب -->
+    <p class="welcome">💡 يسعدني تواجدكم في الموقع</p>
+
+    <!-- الوصف -->
+    <p class="description">
+        هذا الموقع مخصص لشرح المادة العلمية بطريقة سهلة وواضحة،
+        مع مجموعة من التمارين والأسئلة والصور التعليمية
+        التي تساعدكم على فهم حالات المادة والنموذج الجسيمي بشكل أفضل.
+        
+    </p> 
+
+    <img title="حالات المادة الأساسية هي الصلبة والسائلة والغازية، بالإضافة إلى البلازما، وتختلف في ترتيب وقوة ترابط جسيماتها" src="img/img0 .jfif" alt=" حالات المادة والنموذج الجسيمي" style="width: 300px; margin-top: 20px; border-radius: 10px; box-shadow: 0 0 15px #ff99cc;">
+
+<br>
+
+<video controls>
+<source src="فيديو/الحالات الأساسية للمادة.ogg">
+</video>
+
+</p>
+
+<a target="_blank" href="https://www.youtube.com/watch?v=ilYom4bawtI">شاهد ملخص درس حالات المادة </a>
+
+
+
+
+</body>
+</html>

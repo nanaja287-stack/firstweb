@@ -1,0 +1,86 @@
+/* إعداد عام */
+body {
+    font-family: "Cairo", sans-serif;
+    background: #fafafa;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+/* شريط الروابط */
+.menu {
+    background: #ffb6c1;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.menu a {
+    text-decoration: none;
+    margin: 0 12px;
+    color: #000;
+    font-weight: bold;
+}
+
+.menu a.active {
+    color: #b30059;
+    text-decoration: underline;
+}
+
+/* العناوين */
+h1 {
+    text-align: center;
+    color: #b30059;
+    margin-top: 25px;
+    
+}
+
+h2 {
+    color: #d4006e;
+}
+
+/* الصناديق العامة */
+.section, .question-box, .contact-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 85%;
+    margin: 25px auto;
+    border-right: 5px solid #ff66a3;
+}
+
+/* الصور */
+img {
+    max-width: 80%;
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* نموذج الاتصال */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+form button {
+    background: #ff4081;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+form button:hover {
+    background: #e73770;
+}
